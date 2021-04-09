@@ -1,0 +1,306 @@
+@font-face{
+    src: url(fonts/quicksandbold.otf);
+    font-family: quicksandbold;
+}
+
+body {
+    font-family: 'quicksandbold', Arial, sans-serif;
+}
+
+.estilo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 1500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.background {
+    width: 1000px;
+    height: 800px;
+    background-color: #3171ce;
+}
+
+
+.palavra {
+    color: white;
+    padding-top: 1.3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.numero {
+    font-size: 1.3rem;
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    padding: 15px 10px 10px 10px;
+    margin: 7% 20% 5% 10%;
+    background: white;
+    border: 3px #224f90 solid;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+a {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    background: #142d52;
+    width: 40%;
+    margin: 1.5rem 0;
+    margin-top: 50px;
+}
+
+a:nth-child(odd){
+    border-radius: 0px 20px 20px 0px;
+ }
+
+a:nth-child(even){
+   border-radius: 20px 0px 0px 20px;
+}
+
+button {
+    display: flex;
+    border-style: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #142d52;
+    width: 100%;
+}
+
+#hidden:nth-child(5){
+    background: #3171ce;
+}
+
+#hidden:nth-child(6){
+    background: #3171ce;
+}
+
+#hidden:nth-child(7){
+    background: #3171ce;
+}
+
+.containerBt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 800px;
+}
+
+#hidden {
+    cursor: auto;
+    opacity: 0%;
+    visibility: hidden;
+}
+
+#textoAviso {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10rem;
+    margin-left: 15rem;
+}
+
+#depositarStyle {
+    border-radius: 20px 0px 0px 20px;
+}
+/* Depositar */
+#inputAviso {
+    position: absolute;
+    right: 25%;
+    top: 40%;
+    width: 30%;
+    height: 20%;
+    font-size: 100px;
+    background: #3171ce;
+    border-style: none;
+}
+
+#inputAviso:focus{
+    outline: none;
+}
+/* MBWAY */
+#mbWayDiv {
+    width: 100%;
+    height: 10%;
+    background: #142d52;
+    position: absolute;
+    top: 10%;
+}
+
+#h1Mb {
+    color: white;
+    text-align: center;
+}
+
+#h1MbSaida {
+    color: white;
+    text-align: center;
+}
+/* Consulta de movimentos */
+#informacaoMovimentosDiv {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    background: #303030;
+    height: 75%;
+    width: 75%;
+    border: 2px solid black;
+}
+#informacaoMovimentosH1 {
+    text-align: center;
+    color: white;
+}
+#informacaoMovimentosP {
+    text-align: left;
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+#informacaoMovimentosPf{
+    text-align: end;
+    color: white;
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+/* Consulta de Nib */
+#informacaoNib {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10rem;
+    right: 5rem; 
+}
+
+/* Consulta de saldo */
+#informacaoSaldo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10rem;
+    right: 20rem; 
+}
+
+/* Consulta de Iban */
+#informacaoIban {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10rem;
+    right: 8rem; 
+}
+/* Menu da conta */
+#menuConta{
+    width: 200px;
+}
+
+h1 {
+    justify-content: center;
+}
+
+.form{
+    padding-top: 50px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+p,h3{
+    text-align: center;
+}
+
+#desaparecer {
+    display: none;
+}
+
+/* Teste */
+#vouchersDivAnim {
+    width: 100%;
+    height: 10%;
+    background: #142d52;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: white;
+}
+
+#vouchersDiv {
+    width: 100%;
+    height: 20%;
+    background: #142d52;
+    position: absolute;
+    top: 10%;
+}
+
+#h1Vouchers {
+    color: white;
+    text-align: center;
+    font: 800 40px;
+}
+
+#vouchersDivAnim::after {
+    font-family: 'quicksandbold', Arial, sans-serif;
+    content: counter(count);
+    top: 10%;
+    font-size: 2rem;
+    animation: counter 0.2s linear infinite alternate;
+    counter-reset: count 0;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 0758964123;
+    }
+    10% {
+      counter-increment: count 1587694230;
+    }
+    20% {
+      counter-increment: count 2048965713;
+    }
+    30% {
+      counter-increment: count 3751082694;
+    }
+    40% {
+      counter-increment: count 4910235786;
+    }
+    50% {
+      counter-increment: count 5874963210;
+    }
+    60% {
+      counter-increment: count 6895741230;
+    }
+    70% {
+      counter-increment: count 7541236908;
+    }
+    80% {
+      counter-increment: count 8972635410;
+    }
+    90% {
+      counter-increment: count 9874563110;
+    }
+    100% {
+      counter-increment: count 1058967413;
+    }
+  }
+@media screen and (max-width: 768px) {
+    a{
+        margin-top: 0;
+        
+    }
+}

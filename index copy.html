@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Banco</title>
+    <link href="style.css" rel='stylesheet'>
+</head>
+<body>
+    <div class="container background">
+        <div>
+            <div class="containerBt" id='menu'>
+                <a href='#' id='btn1'>
+                    <button id='levantar'>
+                        <p class='texto numero' id='btn1N'>1</p>
+                        <p class='texto palavra' id='btn1P'>Levantamentos</p>
+                    </button>
+                </a>
+                <a href='#' id='btn3'>
+                    <button class='btn3' id='mbWay'>
+                        <p class='texto numero'>3</p>
+                        <p class='texto palavra' id='btn3P'>MB WAY</p>
+                    </button>
+                </a>
+                <a href='#' id='btn4'>
+                    <button class='btn4' id='consultas'>
+                        <p class='texto numero btn4N'>4</p>
+                        <p class='texto palavra' id='btn4P'>Consultas</p>
+                    </button>
+                </a>
+                <a href='#' id='btn6'>
+                    <button class='btn6' id='descontos'>
+                        <p class='texto numero btn6N'>6</p>
+                        <p class='texto palavra' id='btn6P'>Descontos MB</p>
+                    </button>
+                </a>
+                <a href='#' id='btn7'>
+                    <button class='btn7' id='transferencias'>
+                        <p class='texto numero btn7N'>7</p>
+                        <p class='texto palavra' id='btn7P'>Transferências</p>
+                    </button>
+                </a>
+                <a href='#' id='btn9'>
+                    <button class='btn9' id='vouchers'>
+                        <p class='texto numero btn9N'>9</p>
+                        <p class='texto palavra' id='btn9P'>Vouchers</p>
+                    </button>
+                </a>
+                <a href='#' id='btn_'>
+                    <button class='btn_' id='pagamentos'>
+                        <p class='texto numero btn_N'>.</p>
+                        <p class='texto palavra' id='btn_P'>Pagamentos</p>
+                    </button>
+                </a>
+                <a href='#' id='btn00'>
+                    <button class='btn00' id='depositos'>
+                        <p class='texto numero btn00N'>00</p>
+                        <p class='texto palavra' id='btn00P'>Depósitos</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id='menuConta'>
+        <h3>CLIENTE Nº</h3>
+        <p id='clienteP'></p>
+        <h3>NOME COMPLETO:</h3>
+        <p id='clienteNomeP'></p>
+        <h3>NIF:</h3>
+        <p id='nifP'></p>
+        <h3>BALCÃO:</h3>
+        <p id='balcaoP'></p>
+        <h3>SALDO:</h3>
+        <p id='saldoP'></p>
+        <h3>MBWAY:</h3>
+        <p id=mbWayP></p>
+        <form class='form' id='form'>
+            <h2>Criar conta</h2>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="nif">NIF:</label><br>
+            <input type="text" id="nif" name="nif"><br>
+            <input type="submit" id='submit' value="Submit">
+        </form>
+    </div>
+    <script src='helper.js'></script>
+    <script src='menuLevantar.js'></script>
+    <script src='menuConsultas.js'></script>   
+    <script src='menuMbWay.js'></script>
+    <script src="menuDepositar.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="Cliente.js"></script>
+</body>
+</html>

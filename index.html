@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Banco</title>
+    <link href="style.css" rel='stylesheet'>
+</head>
+<body class='test'>
+        <div class='estilo'>
+                <div class="container background" id='background'>
+                        <div class="containerBt" id='menu'>
+                                <a href='#' id='levantar' class='btn1'>
+                                        <p class='texto numero' id='btn1N'>1</p>
+                                        <p class='texto palavra' id='btn1P'>Levantamentos</p>
+                                </a>
+                                <a href='#' id='mbWay' class='btn3'>
+                                        <p class='texto numero'>3</p>
+                                        <p class='texto palavra' id='btn3P'>MB WAY</p>
+                                </a>
+                                <a href='#' id='consultas' class='btn4'>
+                                        <p class='texto numero btn4N'>4</p>
+                                        <p class='texto palavra' id='btn4P'>Consultas</p>
+                                </a>
+                                <a href='#' id='descontos' class='btn6'>
+                                        <p class='texto numero btn6N'>6</p>
+                                        <p class='texto palavra' id='btn6P'>Descontos MB</p>
+                                </a>
+                                <a href='#' id='transferencias' class='btn7'>
+                                        <p class='texto numero btn7N'>7</p>
+                                        <p class='texto palavra' id='btn7P'>Transferências</p>
+                                </a>
+                                <a href='#' id='vouchers' class='btn9'>
+                                        <p class='texto numero btn9N'>9</p>
+                                        <p class='texto palavra' id='btn9P'>Vouchers</p>
+                                </a>
+                                <a href='#' id='depositos' class='btn00'>
+                                        <p class='texto numero btn00N'>00</p>
+                                        <p class='texto palavra' id='btn00P'>Depósitos</p>
+                                </a>
+                                <a href='#' id='hidden' class='btn_'>
+                                        <p class='texto numero btn_N'>.</p>
+                                        <p class='texto palavra' id='btn_P'></p>
+                                </a>
+                        </div>
+                </div>
+                <div id='menuConta'>
+                        <h3>CLIENTE Nº</h3>
+                        <p id='clienteP'></p>
+                        <h3>NOME COMPLETO:</h3>
+                        <p id='clienteNomeP'></p>
+                        <h3>NIF:</h3>
+                        <p id='nifP'></p>
+                        <h3>BALCÃO:</h3>
+                        <p id='balcaoP'></p>
+                        <h3>SALDO:</h3>
+                        <p id='saldoP'></p>
+                        <h3>MBWAY:</h3>
+                        <p id=mbWayP></p>
+                        <form class='form' id='form'>
+                        <h2>Criar conta</h2>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome"><br>
+                        <label for="nif">NIF:</label><br>
+                        <input type="text" id="nif" name="nif"><br>
+                        <input type="submit" id='submit' value="Submit">
+                        </form>
+                </div>
+        </div>
+    <script type="module" src="index.js"></script>
+    <script src='helper.js'></script>
+    <script src='menuLevantar.js'></script>
+    <script src='menuConsultas.js'></script>   
+    <script src='menuMbWay.js'></script>
+    <script src="menuDepositar.js"></script>
+    <script src="menuVouchers.js"></script>
+    <script type="module" src="Cliente.js"></script>
+    <script type="module" src="Conta.js"></script>
+</body>
+</html>
